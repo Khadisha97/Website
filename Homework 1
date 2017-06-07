@@ -1,0 +1,16 @@
+import Foundation
+
+print("Welcome to the Solar System! There are 8 planets to explore. What is your name?")
+let name = getln()
+print("Nice to meet you, \(name). My name is Eliza, I'm old friend of Siri. let's go on adventure! Shall I randomly choose a planet for you to visit? (Y or N)")
+
+let ans = getln()
+
+if ans == "Y" {
+    let array = ["Mars: is the closest planet", "Neptun: is a cold one", "Uranus", "Pluton"]
+    let randomIndex = Int(arc4random_uniform(UInt32(array.count)))
+    print(array[randomIndex])
+} else{
+    print("I didn't get it")
+}
+  
